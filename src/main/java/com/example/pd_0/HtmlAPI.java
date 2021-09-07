@@ -5,6 +5,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class HtmlAPI {
+    @GetMapping("/")
+    public String welcome(){
+        return "index";
+    }
+
+
     @GetMapping("/self")
     public String index(){
         return "socket_self";
